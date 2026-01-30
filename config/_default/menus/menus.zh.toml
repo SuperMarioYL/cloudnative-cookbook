@@ -1,6 +1,6 @@
 [[main]]
   name = "Containerd"
-  url = "/containerd/00-overview/overview/"
+  url = "/containerd/01-prerequisites/01-linux-namespaces/"
   weight = 10
 
 [[main]]

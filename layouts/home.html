@@ -8,7 +8,7 @@
       <p class="lead fs-4 text-muted my-4">{{ .Params.lead | safeHTML }}</p>
       <div class="my-5">
         <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
-          <a class="btn btn-primary btn-lg px-4" href="/containerd/00-overview/overview/" role="button">Containerd</a>
+          <a class="btn btn-primary btn-lg px-4" href="/containerd/01-prerequisites/01-linux-namespaces/" role="button">Containerd</a>
           <a class="btn btn-primary btn-lg px-4" href="/kubernetes/01-overview/01-architecture/" role="button">Kubernetes</a>
           <a class="btn btn-primary btn-lg px-4" href="/calico/00-overview/overview/" role="button">Calico</a>
         </div>
@@ -69,7 +69,7 @@
 
     <div class="framework-grid">
       <!-- Containerd -->
-      <a href="/containerd/00-overview/overview/" class="framework-card">
+      <a href="/containerd/01-prerequisites/01-linux-namespaces/" class="framework-card">
         <div class="framework-header">
           <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/package.svg" "class" "icon-category") }}</span>
           <span class="framework-category">容器运行时</span>
