@@ -1,0 +1,179 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="display-3 fw-bold mt-5">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead fs-4 text-muted my-4">{{ .Params.lead | safeHTML }}</p>
+      <div class="my-5">
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+          <a class="btn btn-primary btn-lg px-4" href="/containerd/00-overview/overview/" role="button">Containerd</a>
+          <a class="btn btn-primary btn-lg px-4" href="/kubernetes/01-overview/01-architecture/" role="button">Kubernetes</a>
+          <a class="btn btn-primary btn-lg px-4" href="/calico/00-overview/overview/" role="button">Calico</a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-outline-secondary px-4" href="https://github.com/SuperMarioYL/cloudnative-cookbook" role="button">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md bg-light">
+  <div class="container-xl">
+    <div class="row justify-content-center text-center g-5">
+      <div class="col-lg-4">
+        <div class="px-5 py-3">
+          <div class="mb-3 illustration-wrapper">
+            {{ with resources.Get "images/illustrations/server-cluster.svg" }}
+              {{ .Content | safeHTML }}
+            {{ end }}
+          </div>
+          <h3 class="h5">深入原理</h3>
+          <p class="text-muted">从架构设计到源码实现，理解云原生组件的核心原理</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="px-5 py-3">
+          <div class="mb-3 illustration-wrapper">
+            {{ with resources.Get "images/illustrations/version-control.svg" }}
+              {{ .Content | safeHTML }}
+            {{ end }}
+          </div>
+          <h3 class="h5">实践导向</h3>
+          <p class="text-muted">结合实际场景，提供配置示例和最佳实践</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="px-5 py-3">
+          <div class="mb-3 illustration-wrapper">
+            {{ with resources.Get "images/illustrations/cloud-hosting.svg" }}
+              {{ .Content | safeHTML }}
+            {{ end }}
+          </div>
+          <h3 class="h5">体系完整</h3>
+          <p class="text-muted">涵盖容器编排、网络、运行时等完整技术栈</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md">
+  <div class="container-xl">
+    <div class="text-center mb-5">
+      <h2 class="mb-2">云原生组件深度解析</h2>
+      <p class="text-muted">从入门到精通，掌握云原生核心技术</p>
+    </div>
+
+    <div class="framework-grid">
+      <!-- Containerd -->
+      <a href="/containerd/00-overview/overview/" class="framework-card">
+        <div class="framework-header">
+          <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/package.svg" "class" "icon-category") }}</span>
+          <span class="framework-category">容器运行时</span>
+        </div>
+        <h3>Containerd</h3>
+        <p>行业标准容器运行时，支持 OCI 规范和 Kubernetes CRI</p>
+        <div class="framework-tags">
+          <span>CRI</span>
+          <span>OCI</span>
+          <span>Snapshotter</span>
+        </div>
+      </a>
+
+      <!-- Kubernetes -->
+      <a href="/kubernetes/01-overview/01-architecture/" class="framework-card">
+        <div class="framework-header">
+          <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/box.svg" "class" "icon-category") }}</span>
+          <span class="framework-category">容器编排</span>
+        </div>
+        <span class="framework-badge">核心平台</span>
+        <h3>Kubernetes</h3>
+        <p>基于 1.32 版本源码深度解析，涵盖 API Server、Controller、Scheduler、Kubelet 等核心组件</p>
+        <div class="framework-tags">
+          <span>API Server</span>
+          <span>Controller</span>
+          <span>Scheduler</span>
+          <span>Kubelet</span>
+        </div>
+      </a>
+
+      <!-- Calico -->
+      <a href="/calico/00-overview/overview/" class="framework-card">
+        <div class="framework-header">
+          <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/network.svg" "class" "icon-category") }}</span>
+          <span class="framework-category">容器网络</span>
+        </div>
+        <h3>Calico</h3>
+        <p>高性能容器网络方案，支持 BGP、eBPF 数据面和 NetworkPolicy</p>
+        <div class="framework-tags">
+          <span>BGP</span>
+          <span>eBPF</span>
+          <span>NetworkPolicy</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md bg-light">
+  <div class="container-xl">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mb-4">适用读者</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center g-3">
+      <div class="col-lg-6">
+        <div class="d-flex align-items-start p-3">
+          <span class="me-3">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/cloud.svg" "class" "icon-reader") }}</span>
+          <div>
+            <strong>云原生开发者</strong>
+            <p class="text-muted mb-0">构建和部署容器化应用的开发者</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="d-flex align-items-start p-3">
+          <span class="me-3">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/server.svg" "class" "icon-reader") }}</span>
+          <div>
+            <strong>平台工程师</strong>
+            <p class="text-muted mb-0">构建和维护 Kubernetes 平台的工程师</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="d-flex align-items-start p-3">
+          <span class="me-3">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/cpu.svg" "class" "icon-reader") }}</span>
+          <div>
+            <strong>AI/ML 基础设施工程师</strong>
+            <p class="text-muted mb-0">管理 GPU 集群和 AI 训练/推理平台</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="d-flex align-items-start p-3">
+          <span class="me-3">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/activity.svg" "class" "icon-reader") }}</span>
+          <div>
+            <strong>SRE 和运维工程师</strong>
+            <p class="text-muted mb-0">负责云原生系统稳定性和可观测性</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+{{ if site.Params.doks.backgroundDots -}}
+<div class="d-flex justify-content-start">
+  <div class="bg-dots"></div>
+</div>
+{{ end -}}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+{{ end }}

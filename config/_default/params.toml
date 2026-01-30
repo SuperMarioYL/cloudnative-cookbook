@@ -1,0 +1,139 @@
+# Hugo
+title = "Cloud Native Cookbook"
+description = "云原生技术原理解析，涵盖 Kubernetes、Calico、Containerd 等核心组件的深度解读"
+images = ["cover.png"]
+
+# mainSections
+mainSections = ["kubernetes", "calico", "containerd"]
+
+[social]
+  github = "SuperMarioYL/cloudnative-cookbook"
+
+# Doks (@thulite/doks-core)
+[doks]
+  # Color mode
+  colorMode = "auto"
+  colorModeToggler = true
+
+  # Navbar
+  navbarSticky = true
+  containerBreakpoint = "lg"
+
+  ## Button
+  navBarButton = false
+  navBarButtonUrl = "/kubernetes/00-overview/overview/"
+  navBarButtonText = "Get started"
+
+  # FlexSearch
+  flexSearch = true
+  searchExclKinds = []
+  searchExclTypes = []
+  showSearch = []
+  indexSummary = false
+
+  ## Search results
+  showDate = false
+  showSummary = true
+  searchLimit = 99
+
+  # Global alert
+  alert = false
+  alertDismissable = true
+
+  # Bootstrap
+  bootstrapJavascript = false
+
+  # Nav
+  sectionNav = ["kubernetes", "calico", "containerd"]
+  toTopButton = false
+  breadcrumbTrail = false
+  headlineHash = true
+  scrollSpy = true
+
+  # Multilingual
+  multilingualMode = false
+  showMissingLanguages = true
+
+  # Versioning
+  docsVersioning = false
+  docsVersion = "1.0"
+
+  # UX
+  headerBar = false
+  backgroundDots = true
+
+  # Homepage
+  sectionFooter = false
+
+  # Blog
+  relatedPosts = false
+  imageList = true
+  imageSingle = true
+
+  # Repository
+  editPage = true
+  lastMod = true
+  repoHost = "GitHub"
+  docsRepo = "https://github.com/SuperMarioYL/cloudnative-cookbook"
+  docsRepoBranch = "main"
+  docsRepoSubPath = ""
+
+  krokiURL = "https://kroki.io"
+
+  # SCSS colors - Cloud Native Theme (Kubernetes blue)
+  ## Dark theme
+  # textDark = "#dee2e6"
+  # accentDark = "#326ce5"
+  ## Light theme
+  # textLight = "#1d2d35"
+  # accentLight = "#326ce5"
+
+  [doks.menu]
+    [doks.menu.section]
+      auto = true
+      collapsibleSidebar = true
+
+# Debug
+[render_hooks.image]
+  errorLevel = 'ignore'
+
+[render_hooks.link]
+  errorLevel = 'ignore'
+  highlightBroken = false
+
+# Images (@thulite/images)
+[thulite_images]
+  [thulite_images.defaults]
+    decoding = "async"
+    fetchpriority = "auto"
+    loading = "lazy"
+    widths = [480, 576, 768, 1025, 1200, 1440]
+    sizes = "auto"
+    process = ""
+    lqip = "16x webp q20"
+
+# Inline SVG (@thulite/inline-svg)
+[inline_svg]
+  iconSetDir = "tabler-icons"
+
+# SEO (@thulite/seo)
+[seo]
+  [seo.title]
+    separator = " | "
+    suffix = ""
+  [seo.favicons]
+    sizes = []
+    icon = "favicon.png"
+    svgIcon = "favicon.svg"
+    maskIcon = "mask-icon.svg"
+    maskIconColor = "white"
+  [seo.schemas]
+    type = "Organization"
+    logo = "favicon-512x512.png"
+    name = "Cloud Native Cookbook"
+    sameAs = ["https://github.com/SuperMarioYL/cloudnative-cookbook"]
+    images = ["cover.png"]
+    article = []
+    newsArticle = []
+    blogPosting = ["blog"]
+    product = []

@@ -1,0 +1,33 @@
+{
+  "name": "cloudnative-cookbook",
+  "version": "1.0.0",
+  "description": "云原生技术原理解析",
+  "author": "SuperMarioYL",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperMarioYL/cloudnative-cookbook.git"
+  },
+  "scripts": {
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
+  },
+  "dependencies": {
+    "@thulite/doks-core": "^1.8.3",
+    "@thulite/images": "^3.3.1",
+    "@thulite/inline-svg": "^1.2.0",
+    "@thulite/seo": "^2.4.1",
+    "@tabler/icons": "^3.34.1",
+    "thulite": "^2.6.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "vite": "^7.0.6"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}

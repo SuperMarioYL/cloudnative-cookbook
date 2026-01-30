@@ -1,0 +1,283 @@
+// 自定义样式 - Cloud Native Cookbook
+
+// 代码高亮 - 亮色主题
+[data-bs-theme="light"] {
+  @import "../components/syntax-light";
+}
+
+// 代码高亮 - 暗色主题
+[data-bs-theme="dark"] {
+  @import "../components/syntax-dark";
+}
+
+// 文档页面优化
+.doks-content {
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--bs-border-color);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  // 列表样式
+  ul, ol {
+    margin-bottom: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+  }
+
+  // 段落
+  p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  // 代码块
+  pre {
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+
+  // 行内代码
+  code:not(pre code) {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+}
+
+// Mermaid 图表居中
+.mermaid {
+  margin: 2rem 0;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// 侧边栏优化
+.doks-sidebar {
+  .sidebar-nav {
+    a {
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: var(--bs-tertiary-bg);
+      }
+
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// 目录优化
+.doks-toc {
+  .toc-list {
+    a {
+      font-size: 0.875rem;
+      color: var(--bs-secondary-color);
+
+      &:hover {
+        color: var(--bs-primary);
+      }
+    }
+  }
+}
+
+// 首页插图样式
+.illustration-wrapper {
+  svg {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 150px;
+  }
+}
+
+// 首页特性图标
+.icon-feature {
+  width: 48px;
+  height: 48px;
+  stroke-width: 1.5;
+  color: var(--bs-primary);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  background: var(--bs-tertiary-bg);
+}
+
+// 分类标题
+.category-title {
+  color: var(--bs-secondary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-category {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+// 读者图标
+.icon-reader {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
+  color: var(--bs-primary);
+  flex-shrink: 0;
+}
+
+// 框架网格布局
+.framework-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// 框架卡片
+.framework-card {
+  display: block;
+  padding: 1.75rem;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+  position: relative;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--bs-primary);
+    color: inherit;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--bs-heading-color);
+  }
+
+  p {
+    color: var(--bs-secondary-color);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.framework-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+}
+
+.framework-category {
+  font-weight: 500;
+}
+
+.framework-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bs-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.framework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  span {
+    background: var(--bs-tertiary-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--bs-secondary-color);
+  }
+}
+
+// 表格样式
+.doks-content table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--bs-border-color);
+  }
+
+  th {
+    background-color: var(--bs-tertiary-bg);
+    font-weight: 600;
+  }
+
+  tr:hover td {
+    background-color: var(--bs-tertiary-bg);
+  }
+}
+
+// 引用块
+.doks-content blockquote {
+  border-left: 4px solid var(--bs-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: var(--bs-tertiary-bg);
+  border-radius: 0 8px 8px 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
