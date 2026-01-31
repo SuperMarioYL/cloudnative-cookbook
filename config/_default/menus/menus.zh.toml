@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Calico"
-  url = "/calico/00-overview/overview/"
+  url = "/calico/01-network-fundamentals/01-linux-networking-basics/"
   weight = 30
 
 [[social]]

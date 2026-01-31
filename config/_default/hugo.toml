@@ -82,3 +82,9 @@ copyRight = "Copyright (c) 2024-2025 Cloud Native Cookbook"
   hint = "photo"
   quality = 85
   resampleFilter = "Lanczos"
+
+[services.googleAnalytics]
+  ID = ""
+
+# 禁用 description 长度警告
+ignoreLogs = ["description-too-long"]
