@@ -1,0 +1,7 @@
+{{- partial "seo/_all" . -}}
+{{- with .Site.Params.seo.verification.google }}
+  <meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+{{- with .Site.Params.seo.verification.baidu }}
+  <meta name="baidu-site-verification" content="{{ . }}">
+{{- end }}

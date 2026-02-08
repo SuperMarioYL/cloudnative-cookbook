@@ -121,6 +121,10 @@ mainSections = ["kubernetes", "calico", "containerd"]
   [seo.title]
     separator = " | "
     suffix = ""
+  [seo.verification]
+    # Search engine webmaster verification tokens
+    google = ""
+    baidu = ""
   [seo.favicons]
     sizes = []
     icon = "favicon.png"

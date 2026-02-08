@@ -13,7 +13,10 @@
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
+    "preview": "vite preview --outDir public",
+    "cf:whoami": "npx wrangler whoami",
+    "cf:dev": "npm run build && npx wrangler pages dev public",
+    "cf:deploy": "npm run build && npx wrangler pages deploy public --project-name=${CF_PAGES_PROJECT_NAME:-cloudnative-cookbook}"
   },
   "dependencies": {
     "@thulite/doks-core": "^1.8.3",

@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+
+Sitemap: {{ "/sitemap.xml" | absURL }}
