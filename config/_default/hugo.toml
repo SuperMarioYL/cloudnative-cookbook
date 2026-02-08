@@ -20,7 +20,7 @@ copyRight = "Copyright (c) 2024-2025 Cloud Native Cookbook"
   enable = true
 
 [outputs]
-  home = ["HTML", "RSS", "searchIndex"]
+  home = ["HTML", "RSS", "searchIndex", "SITEMAP"]
   section = ["HTML", "RSS", "SITEMAP"]
 
 [outputFormats.searchIndex]
