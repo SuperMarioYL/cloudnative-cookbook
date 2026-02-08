@@ -61,7 +61,7 @@ jobs:
           TZ: Asia/Shanghai
         run: |
           hugo mod tidy
-          hugo --gc --minify
+          hugo --gc --minify --cleanDestinationDir
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

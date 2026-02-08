@@ -12,7 +12,7 @@
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
-    "build": "hugo --minify --gc",
+    "build": "hugo --minify --gc --cleanDestinationDir",
     "preview": "vite preview --outDir public",
     "cf:whoami": "npx wrangler whoami",
     "cf:dev": "npm run build && npx wrangler pages dev public",
