@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cloud Native Cookbook Mask Icon">
+  <circle cx="186" cy="256" r="62" fill="#000000"/>
+  <circle cx="258" cy="206" r="80" fill="#000000"/>
+  <circle cx="334" cy="254" r="58" fill="#000000"/>
+  <rect x="136" y="250" width="252" height="100" rx="50" fill="#000000"/>
+  <rect x="180" y="266" width="152" height="64" rx="20" fill="#000000"/>
+  <rect x="253" y="272" width="6" height="52" rx="3" fill="#FFFFFF"/>
+</svg>

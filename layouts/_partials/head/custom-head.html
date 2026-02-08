@@ -1,1 +1,5 @@
-{{/* Custom head elements */}}
+{{- with resources.Get "mask-icon.svg" }}
+  {{- $mask := . | resources.Copy "/mask-icon.svg" }}
+  <link rel="mask-icon" href="{{ $mask.RelPermalink }}" color="#326ce5">
+{{- end }}
+<meta name="theme-color" content="#326ce5">

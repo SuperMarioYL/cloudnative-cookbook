@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cloud Native Cookbook Favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F54C9"/>
+      <stop offset="1" stop-color="#3A7FF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <circle cx="186" cy="256" r="62" fill="#FFFFFF"/>
+  <circle cx="258" cy="206" r="80" fill="#FFFFFF"/>
+  <circle cx="334" cy="254" r="58" fill="#FFFFFF"/>
+  <rect x="136" y="250" width="252" height="100" rx="50" fill="#FFFFFF"/>
+
+  <rect x="180" y="266" width="152" height="64" rx="20" fill="#2B67D8"/>
+  <rect x="253" y="272" width="6" height="52" rx="3" fill="#FFFFFF"/>
+</svg>
