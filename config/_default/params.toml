@@ -1,10 +1,10 @@
 # Hugo
 title = "Cloud Native Cookbook"
-description = "云原生技术原理解析，涵盖 Kubernetes、Calico、Containerd 等核心组件的深度解读"
+description = "云原生技术原理解析，涵盖 Kubernetes、Calico、Containerd、Volcano、HAMi 等核心组件的深度解读"
 images = ["cover.png"]
 
 # mainSections
-mainSections = ["kubernetes", "calico", "containerd"]
+mainSections = ["kubernetes", "calico", "containerd", "volcano", "hami"]
 
 [social]
   github = "SuperMarioYL/cloudnative-cookbook"
@@ -44,7 +44,7 @@ mainSections = ["kubernetes", "calico", "containerd"]
   bootstrapJavascript = false
 
   # Nav
-  sectionNav = ["kubernetes", "calico", "containerd"]
+  sectionNav = ["kubernetes", "calico", "containerd", "volcano", "hami"]
   toTopButton = false
   breadcrumbTrail = false
   headlineHash = true

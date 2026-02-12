@@ -11,6 +11,8 @@
           <a class="btn btn-primary btn-lg px-4" href="/containerd/01-prerequisites/01-linux-namespaces/" role="button">Containerd</a>
           <a class="btn btn-primary btn-lg px-4" href="/kubernetes/01-overview/01-architecture/" role="button">Kubernetes</a>
           <a class="btn btn-primary btn-lg px-4" href="/calico/01-network-fundamentals/01-linux-networking-basics/" role="button">Calico</a>
+          <a class="btn btn-primary btn-lg px-4" href="/volcano/00-overview/01-what-is-volcano/" role="button">Volcano</a>
+          <a class="btn btn-primary btn-lg px-4" href="/hami/00-index/01-documentation-index/" role="button">HAMi</a>
         </div>
         <div class="d-flex justify-content-center">
           <a class="btn btn-outline-secondary px-4" href="https://github.com/SuperMarioYL/cloudnative-cookbook" role="button">GitHub</a>
@@ -112,6 +114,36 @@
           <span>BGP</span>
           <span>eBPF</span>
           <span>NetworkPolicy</span>
+        </div>
+      </a>
+
+      <!-- Volcano -->
+      <a href="/volcano/00-overview/01-what-is-volcano/" class="framework-card">
+        <div class="framework-header">
+          <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/flame.svg" "class" "icon-category") }}</span>
+          <span class="framework-category">批调度</span>
+        </div>
+        <h3>Volcano</h3>
+        <p>云原生批调度系统，面向 AI/ML、大数据、HPC 场景的高性能调度引擎</p>
+        <div class="framework-tags">
+          <span>Gang Scheduling</span>
+          <span>Queue</span>
+          <span>Plugin</span>
+        </div>
+      </a>
+
+      <!-- HAMi -->
+      <a href="/hami/00-index/01-documentation-index/" class="framework-card">
+        <div class="framework-header">
+          <span class="me-2">{{ partial "inline-svg" (dict "src" "svgs/tabler-icons/outline/cpu.svg" "class" "icon-category") }}</span>
+          <span class="framework-category">GPU 虚拟化</span>
+        </div>
+        <h3>HAMi</h3>
+        <p>异构 AI 计算设备虚拟化中间件，GPU 共享调度、显存隔离、算力管理</p>
+        <div class="framework-tags">
+          <span>vGPU</span>
+          <span>Scheduler Extender</span>
+          <span>Device Plugin</span>
         </div>
       </a>
     </div>
